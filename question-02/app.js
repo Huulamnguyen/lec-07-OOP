@@ -8,12 +8,14 @@
 //     document.body.appendChild(scriptTag);
 // })
 
+import {alert} from './alert.js'
+
 var js = document.createElement("script");
 js.type = "text/javascript";
-js.src = "app.js";
+js.src = alert;
 
-js.onload = function() {
-    console.log("hello")
-};
+// js.onload = function() {
+//     alert("hello")
+// };
 
 document.body.appendChild(js);
